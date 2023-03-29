@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2EAE2;
+    font-weight: 500;
+}
+.container{
+    max-width: 340px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    border-radius: 10px;
+    & .productimage{
+        border-radius: 12px 12px 0 0;
+        width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+    }
+    & h6{
+        font-size: 12px;
+        line-height: 15px;
+        color: #6C7289;
+        letter-spacing: 5px;
+        margin: 12px 0 12px 26px;
+    }
+    & h1{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #1C232B;
+        margin: 0 24px 16px 24px;
+    }
+    & .p{
+        font-size: 14px;
+        line-height: 23px;
+        color: #6C7289;
+        margin: 0 24px 24px 24px;
+    }
+    & .price{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin: 0 0px 20px 24px
+    }
+    & .new{
+        color: #3D8168;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        margin-right: 19px;
+    }
+    & .before{
+        font-size: 13px;
+        line-height: 23px;
+        text-decoration-line: line-through;
+        color: #6C7289;
+        margin-top: 6px;
+    }
+    & button{
+        background: #3D8168;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #FFFFFF;
+        padding: 15px 90px 15px 90px;
+        margin: 0 24px 24px 24px;
+        cursor: pointer;
+        border: none;
+    }
+    & button img{
+        width: 13px;
+    }
+}
+@media screen and (min-width:1440px){
+    .container {
+      max-width: 600px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 300px 300px;
+      & button{
+        margin: 10% 0 0 10%;
+        padding: 12px 70px 12px 70px;
+        &:hover {
+            background-color: #1A4032;
+        }
+      }
+      & .productimage{
+        height: 100%;
+        max-height: 100%;
+        border-radius: 10px 0px 0px 10px;
+        background-size: cover;
+        object-fit: none;
+        margin: 0;
+      }
+      & #xie{
+        margin: 10% 5% 0 5%;
+      }
+    }
+}
